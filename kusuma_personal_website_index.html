@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kusuma G.R — Portfolio & Freelance Services</title>
+  <meta name="description" content="Kusuma G.R — Customer Support, Data Entry, Virtual Assistance, Basic Python & Power BI. Freelance services and portfolio." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0e14; --card:#121826; --soft:#1a2030; --text:#e9eefb; --muted:#a8b3cf; --brand:#6aa6ff; --accent:#7be2d6; --ring:rgba(122,169,255,.4);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,Helvetica,sans-serif;color:var(--text);background:linear-gradient(180deg,var(--bg),#0f1220);}    
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1120px;margin:0 auto;padding:24px}
+    header{position:sticky;top:0;background:rgba(11,14,20,.7);backdrop-filter:blur(10px);border-bottom:1px solid #1f2433;z-index:10}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .nav .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--brand),var(--accent));box-shadow:0 10px 24px rgba(106,166,255,.35)}
+    .brand h1{font-size:18px;margin:0}
+    .links{display:flex;gap:16px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;border:1px solid #26314a;background:var(--soft);color:var(--text);text-decoration:none;font-weight:600}
+    .btn:hover{box-shadow:0 0 0 4px var(--ring)}
+    .btn.primary{background:linear-gradient(135deg,var(--brand),#4c82ff);border-color:#3b63c7}
+
+    .hero{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;align-items:center;padding:48px 0}
+    .card{background:linear-gradient(180deg,var(--card),#0f1422);border:1px solid #1f2433;border-radius:20px;padding:28px;box-shadow:0 20px 50px rgba(0,0,0,.25)}
+    .kicker{color:var(--accent);font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:12px;margin-bottom:10px}
+    .title{font-size:42px;line-height:1.1;margin:0 0 12px}
+    .subtitle{color:var(--muted);font-size:16px;margin:0 0 22px}
+    .badges{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+    .badge{font-size:12px;border:1px dashed #2a3550;color:var(--muted);padding:6px 10px;border-radius:999px;background:#12192b}
+
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .section{padding:28px 0}
+    .section h2{margin:0 0 14px;font-size:24px}
+    .list{display:grid;gap:10px}
+    .li{padding:14px 14px;border:1px solid #1f2433;border-radius:14px;background:#0f1422}
+    .muted{color:var(--muted)}
+
+    .resume-cols{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .service h3{margin:0 0 6px;font-size:18px}
+
+    .portfolio{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .tile{border:1px solid #1f2433;border-radius:16px;padding:18px;background:#0e1320}
+    .tile p{margin:6px 0 0}
+
+    footer{padding:28px 0;color:var(--muted)}
+    .contact{display:grid;grid-template-columns:1.2fr 1fr;gap:18px}
+
+    @media (max-width: 960px){
+      .hero{grid-template-columns:1fr}
+      .grid,.services,.portfolio,.resume-cols{grid-template-columns:1fr}
+      header .links{display:none}
+    }
+  </style>
+  <!-- SEO Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Kusuma G.R",
+    "jobTitle": "Freelance Customer Support & Virtual Assistant",
+    "email": "mailto:kusumakhushi5@gmail.com",
+    "telephone": "+91-8880903183",
+    "address": {"@type":"PostalAddress","addressLocality":"Bangalore","addressCountry":"IN"},
+    "knowsAbout": ["Customer Service","BPO","KPO","Data Entry","MS Excel","MS Word","Python","Power BI"],
+    "url": ""
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <h1>Kusuma G.R</h1>
+      </div>
+      <nav class="links" aria-label="Primary">
+        <a class="btn" href="#about">About</a>
+        <a class="btn" href="#skills">Skills</a>
+        <a class="btn" href="#experience">Experience</a>
+        <a class="btn" href="#services">Services</a>
+        <a class="btn" href="#portfolio">Portfolio</a>
+        <a class="btn" href="#contact">Contact</a>
+      </nav>
+      <a class="btn primary" href="mailto:kusumakhushi5@gmail.com">Hire Me</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="card">
+        <div class="kicker">Freelance Support • Data Entry • Virtual Assistant</div>
+        <h2 class="title">Hi, I'm Kusuma — I help businesses with customer support, clean data, and simple analytics.</h2>
+        <p class="subtitle">3y 3m in Customer Service • 1y 3m in BPO Technical Support • 2y 9m in KPO (Insurance, Gallagher). Basic Python & Power BI.</p>
+        <div class="badges">
+          <span class="badge">Customer Support (Voice/Chat/Email)</span>
+          <span class="badge">Excel & Word Reports</span>
+          <span class="badge">Internet Research</span>
+          <span class="badge">Basic Python</span>
+          <span class="badge">Power BI (Basics)</span>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn primary" href="#contact">Get a Free Intro Call</a>
+          <a class="btn" href="resume/Kusuma_GR_Resume.pdf" download>Download Resume (PDF)</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3 style="margin:0 0 8px">Quick Facts</h3>
+        <div class="list">
+          <div class="li"><strong>Location:</strong> Bangalore, India</div>
+          <div class="li"><strong>Languages:</strong> English, Hindi, Kannada, Tamil, Telugu</div>
+          <div class="li"><strong>Availability:</strong> Part‑time / Project‑based</div>
+          <div class="li"><strong>Email:</strong> <a href="mailto:kusumakhushi5@gmail.com">kusumakhushi5@gmail.com</a></div>
+          <div class="li"><strong>Phone:</strong> <a href="tel:+918880903183">+91‑8880903183</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="resume-cols">
+        <div class="card">
+          <h2>About Me</h2>
+          <p class="muted">Motivated and detail‑oriented professional experienced in customer relationship management, BPO tech support, and KPO insurance processes. I create clean reports, communicate clearly with customers, and streamline small team workflows.</p>
+          <p>I work well with cross‑functional teams, document SOPs, and can support onboarding for new joiners. I’m a quick learner and reliable with deadlines.</p>
+        </div>
+        <div class="card">
+          <h2>Highlights</h2>
+          <ul class="muted">
+            <li>Created SLA/KPI reports and performance dashboards</li>
+            <li>Handled KYC, transaction queries, and withdrawals support</li>
+            <li>Helped train and align daily team operations</li>
+            <li>Brainstormed CX improvements with product & ops</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Customer Service</h3>
+          <p class="muted">Voice, chat, and email support; SLA adherence; ticket triage; empathy and clear communication.</p>
+        </div>
+        <div class="card">
+          <h3>Data & Docs</h3>
+          <p class="muted">MS Excel (reports, dashboards), MS Word, basic Tally Prime, internet research & documentation.</p>
+        </div>
+        <div class="card">
+          <h3>Basics of Analytics</h3>
+          <p class="muted">Python & Power BI (basic level): simple cleaning, formatting, and exploratory visuals.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <div class="list">
+        <div class="li"><strong>Customer Service:</strong> 3 years 3 months (Gameskraft Technologies, Concentrix — Axis Bank Credit Cards)</div>
+        <div class="li"><strong>BPO Technical Support:</strong> 1 year 3 months (1Point1 Solutions — MI/Xiaomi)</div>
+        <div class="li"><strong>KPO (Insurance Processing):</strong> 2 years 9 months (Arthur J. Gallagher & Co.)</div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <h2>Services</h2>
+      <div class="services">
+        <div class="card service">
+          <h3>Customer Support</h3>
+          <p class="muted">Inbox/chat handling, FAQs, basic troubleshooting, and CSAT follow‑ups.</p>
+        </div>
+        <div class="card service">
+          <h3>Data Entry & Reporting</h3>
+          <p class="muted">Clean spreadsheets, maintain trackers, and build simple Excel summaries.</p>
+        </div>
+        <div class="card service">
+          <h3>Virtual Assistance</h3>
+          <p class="muted">Research, scheduling, documentation, and SOP formatting.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section">
+      <h2>Portfolio (Samples)</h2>
+      <div class="portfolio">
+        <div class="tile">
+          <strong>Excel KPI Tracker</strong>
+          <p class="muted">Sample anonymized tracker for SLA/KPI reporting.</p>
+        </div>
+        <div class="tile">
+          <strong>FAQ/Knowledge Base</strong>
+          <p class="muted">Structured FAQ doc for faster customer responses.</p>
+        </div>
+        <div class="tile">
+          <strong>Power BI Mini Dashboard</strong>
+          <p class="muted">Simple visuals for volume & resolution times.</p>
+        </div>
+      </div>
+      <p class="muted" style="margin-top:10px">Tip: Replace these with your own files/images or links to Google Drive/OneDrive as you build your portfolio.</p>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="contact">
+        <div class="card">
+          <p>Want to discuss a project or need help with support/data tasks? Send me a message and I’ll get back within 24 hours.</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:10px">
+            <a class="btn primary" href="mailto:kusumakhushi5@gmail.com?subject=Freelance%20Project%20Inquiry">Email Me</a>
+            <a class="btn" href="tel:+918880903183">Call/WhatsApp</a>
+            <a class="btn" href="#" onclick="copyEmail();return false;">Copy Email</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0">Quick Links</h3>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="resume/Kusuma_GR_Resume.pdf" download>Resume (PDF)</a></li>
+          </ul>
+          <p class="muted">Create a folder named <code>resume</code> and place your resume PDF inside it with the same file name to enable the download link.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="card">
+        <p style="margin:0">© <span id="y"></span> Kusuma G.R • Built with vanilla HTML & CSS • Bangalore, India</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    function copyEmail(){
+      navigator.clipboard.writeText('kusumakhushi5@gmail.com');
+      alert('Email copied!');
+    }
+  </script>
+</body>
+</html>
